@@ -16,7 +16,7 @@ class Seeker:
         Args:
             self (Seeker): An instance of Seeker.
         """
-        self._location = random.randint(1, 1000)
+        self.__location = random.randint(1, 1000)
         
     def get_location(self):
         """Gets the current location.
@@ -24,7 +24,7 @@ class Seeker:
         Returns:
             number: The current location,
         """
-        return self._location
+        return self.__location
         
     def move_location(self, location):
         """Moves to the given location.
@@ -33,4 +33,4 @@ class Seeker:
             self (Seeker): An instance of Seeker.
             location (int): The given location.
         """
-        self._location = location
+        self.__location = location
